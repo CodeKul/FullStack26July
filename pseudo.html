@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo Selectors</title>
+
+    <style>
+        ul li:first-child{
+            text-decoration: underline;
+        }
+        ul li:last-child{
+            border:1px solid green;
+        }
+        ul li:nth-child(3){
+            text-decoration: underline;
+            color:darkred;
+        }
+
+        ul li:nth-last-child(2){
+            color:darkslateblue;
+        }
+
+        ul:only-child{
+            border:2px dashed navy;
+        }
+
+        .about h3:first-child{
+            font-family:fantasy;
+            font-weight: 700;
+        }
+
+        .about p:first-of-type{
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            font-weight:lighter;
+            color:darkslategray;
+        }
+
+        .about p:last-of-type{
+            color:gray;
+        }
+
+        .about p:nth-of-type(3){
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            color:forestgreen;
+        }
+
+        
+.container ul:only-of-type{
+    background-color: lightgrey;
+}
+
+ul li::after{
+    content:" framework";
+}
+
+ul li::before{
+    content:"Learn "
+}
+
+ul li::marker{
+    /* content: url('bullet.png'); */
+    content:"-";
+
+}
+
+.about p:first-of-type::first-letter{
+        font-size: xx-large;
+}
+
+.about p:nth-of-type(2)::first-line{
+    color:darkviolet;
+}
+
+.about p::selection{
+    background-color: darkred;
+    color:white;
+}
+
+    </style>
+</head>
+<body>
+    <!-- /*Pseudo classes -> :link,visited,:hover,:active, :focus, :first-child,:last-child,:nth-child(),:only-child,:first-of-type,:last-of-type,:nth-of-type,:only-of-type*/
+    Pseudo Elements -> ::after,::before,::marker,::first-letter,::first-line,::selection 
+ -->
+
+    <div class="container">
+        <ul>
+            <li>Bootstrap</li>
+            <li>React</li>
+            <li>React Router Bootstrap</li>
+            <li>Awesome React Bootstrap Components</li>
+            <li>React Bootstrap CodeSandbox examples</li>
+        </ul>
+
+        <ul>
+            <li>Team</li>
+            <li>Contributers</li>
+        </ul>
+        <p>We welcome community support with both feature and bug reporting. Please don't hesitate to jump in. Join our growing list of contributors.</p>
+        <div class="about">
+            <h3>About</h3>
+            <p>Get to know more about the team maintaining React Bootstrap. Learn a little history of how, why and when the project started and how you can be a part of it.</p>
+            <h3>Team</h3>
+            <p>React Bootstrap is maintained by a team of developers on Github. We have a growing team and if you are interested in re-building the most popular front-end framework with React we would love to hear from you.</p>
+
+            <h3>Get Involved</h3>
+            <p>Get involved with React Bootstrap by opening an issue or submitting a pull request. See our contributing guidelines here.</p>
+
+            <h3>Contributors</h3>
+            <p>We welcome community support with both feature and bug reporting. Please don't hesitate to jump in. Join our growing list of contributors.</p>
+
+            
+        </div>
+    </div>
+</body>
+</html>

@@ -1,8 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="8be4692b-4d8b-4817-a013-502fb344b155" name="Default Changelist" comment="">
+    <list default="true" id="8be4692b-4d8b-4817-a013-502fb344b155" name="Default Changelist" comment="CSS basics">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/basics.css" beforeDir="false" afterPath="$PROJECT_DIR$/basics.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cssbasics.html" beforeDir="false" afterPath="$PROJECT_DIR$/cssbasics.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -90,28 +92,36 @@
       <option name="project" value="LOCAL" />
       <updated>1627907857910</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="CSS basics">
+      <created>1627994304468</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1627994304468</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="basic tags - heading ,p ,a,img" />
     <MESSAGE value="list,table" />
     <MESSAGE value="table,form" />
-    <option name="LAST_COMMIT_MESSAGE" value="table,form" />
+    <MESSAGE value="CSS basics" />
+    <option name="LAST_COMMIT_MESSAGE" value="CSS basics" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="237" y="0" key="CommitChangelistDialog2" timestamp="1627907856929">
+    <state x="237" y="0" key="CommitChangelistDialog2" timestamp="1628598474056">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="237" y="0" key="CommitChangelistDialog2/0.0.1280.680@0.0.1280.680" timestamp="1627907856929" />
-    <state x="421" y="86" key="FileChooserDialogImpl" timestamp="1627920784400">
+    <state x="237" y="0" key="CommitChangelistDialog2/0.0.1280.680@0.0.1280.680" timestamp="1628598474056" />
+    <state x="421" y="86" key="FileChooserDialogImpl" timestamp="1628598479288">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="421" y="86" key="FileChooserDialogImpl/0.0.1280.680@0.0.1280.680" timestamp="1627920784400" />
-    <state x="233" y="78" key="Vcs.Push.Dialog.v2" timestamp="1627907869897">
+    <state x="421" y="86" key="FileChooserDialogImpl/0.0.1280.680@0.0.1280.680" timestamp="1628598479288" />
+    <state x="233" y="78" key="Vcs.Push.Dialog.v2" timestamp="1627994315812">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="233" y="78" key="Vcs.Push.Dialog.v2/0.0.1280.680@0.0.1280.680" timestamp="1627907869897" />
+    <state x="233" y="78" key="Vcs.Push.Dialog.v2/0.0.1280.680@0.0.1280.680" timestamp="1627994315812" />
     <state x="349" y="170" key="com.intellij.ide.util.TipDialog" timestamp="1627920761162">
       <screen x="0" y="0" width="1280" height="680" />
     </state>

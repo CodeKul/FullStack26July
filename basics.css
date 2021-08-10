@@ -33,3 +33,24 @@ h2 {
 .highlight {
   color: maroon;
 }
+
+.basic-selectors h2 {
+  font-family: cursive;
+  font-size: 50px;
+}
+
+.basic-selectors p .highlight {
+  color: red;
+}
+
+.combinator > span {
+  border: 2px solid brown;
+}
+
+.combinator + img {
+  border: 2px solid red;
+}
+
+.basic-selectors ~ a {
+  border: 1px solid navy;
+}

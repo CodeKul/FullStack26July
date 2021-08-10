@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div ~ span{
+            border:2px solid red;
+        }
+        /* Attribute Selectors [attr=value] */
+        [id = "heading"]{
+            background-color: lightblue;
+        }
+        [name ^="des"]{
+            font-style: italic;
+        }
+        [name $="tion"]{
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        }
+
+        /* PseudoClasses -  :hover,:link,:visited,:active,:focus, */
+        a:link{
+            color:darkgreen;
+        }
+        a:visited{
+            color:firebrick;
+        }
+        a:active{
+            color:deepskyblue;
+        }
+        a:hover{
+            color:darkgoldenrod;
+        }
+
+        input:focus{
+            background-color: navy;
+            color:white;
+        }
+
+        .btn{
+            padding:20px;
+            border:none;
+            border:2px solid navy;
+            background-color: white;
+            color:black;
+            border-radius:5px;
+        }
+
+        .btn:hover{
+            background-color: navy;
+            color:white;
+            cursor:pointer;
+        }
+
+    </style>
+</head>
+<body>
+    <h1 id="heading">Getting Started</h1>
+    
+    <div>
+        <p name="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo quaerat voluptatibus fuga quam architecto id soluta excepturi tenetur, tempora, vel incidunt pariatur ipsam alias at minus voluptatem enim quod odio!</p>
+        <img src="blog-writing.jpg" alt="">
+    </div>
+    <a href="semantictags.html">Click here</a>
+    <div>
+        <span name="shortDescription">Lorem, ipsum dolor sit amet consectetur adipisicing elit. A, labore!</span>
+    </div>
+    <span id="msg">Hello world</span>
+    <span name="desInfo"> world</span>
+
+    <input type="text">
+
+    <button class="btn">Report an issue</button>
+
+
+
+</body>
+</html>
