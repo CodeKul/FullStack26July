@@ -140,18 +140,22 @@
     <option name="LAST_COMMIT_MESSAGE" value="CSS-display property" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="237" y="0" key="CommitChangelistDialog2" timestamp="1628857816290">
+    <state x="233" y="3" key="#Notifications" timestamp="1629117225278">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="237" y="0" key="CommitChangelistDialog2/0.0.1280.680@0.0.1280.680" timestamp="1628857816290" />
+    <state x="233" y="3" key="#Notifications/0.0.1280.680@0.0.1280.680" timestamp="1629117225278" />
+    <state x="237" y="0" key="CommitChangelistDialog2" timestamp="1629117154300">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="237" y="0" key="CommitChangelistDialog2/0.0.1280.680@0.0.1280.680" timestamp="1629117154300" />
     <state x="421" y="86" key="FileChooserDialogImpl" timestamp="1628870914036">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="421" y="86" key="FileChooserDialogImpl/0.0.1280.680@0.0.1280.680" timestamp="1628870914036" />
-    <state x="233" y="78" key="Vcs.Push.Dialog.v2" timestamp="1628857822512">
+    <state x="233" y="78" key="Vcs.Push.Dialog.v2" timestamp="1629117207435">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="233" y="78" key="Vcs.Push.Dialog.v2/0.0.1280.680@0.0.1280.680" timestamp="1628857822512" />
+    <state x="233" y="78" key="Vcs.Push.Dialog.v2/0.0.1280.680@0.0.1280.680" timestamp="1629117207435" />
     <state x="349" y="170" key="com.intellij.ide.util.TipDialog" timestamp="1628870905405">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
