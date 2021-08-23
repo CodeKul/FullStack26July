@@ -9,23 +9,46 @@
       body {
         background-color: peru;
       }
-      div {
+      .div-title {
         font-size: small;
       }
+      .description{
+        font-style: italic;
+        color:white;
+      }
+      
       /* @media screen/all/speech/print max-width(),min-width() */
 
       @media (min-width: 700px) {
         body {
-          background-color: green;
+          background-color: lightslategray;
         }
 
-        div {
-          font-size: xx-large;
+        .div-title {
+          font-size:large;
         }
       }
+      
+      @media print{
+        body{
+         color:red;
+         font-size: xx-large;
+        }
+        }
+
+      @media (orientation:portrait){
+        .description{
+          font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; 
+          color:black;
+          font-style: normal;
+        }
+      }
+
+      
     </style>
   </head>
   <body>
-    <div>I am DIV</div>
+    <div class="div-title">I am DIV</div>
+    <div class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero tenetur animi nam harum nulla repellat quas excepturi neque molestiae impedit soluta, reiciendis cum dicta! Totam praesentium dolore autem enim vitae quod aspernatur possimus, molestias, reprehenderit voluptas excepturi atque aliquam, optio at laboriosam dignissimos. Ullam sapiente tempora magnam dolore qui molestias eius possimus incidunt ad corrupti ipsa necessitatibus dolores consequatur, ex dolorem quam repellat. Beatae commodi officia hic fugit error sint quae, consectetur atque libero molestias soluta quas quo ratione non suscipit aperiam qui a quaerat eaque tempore ipsam maxime! Dolor culpa placeat, ducimus possimus odio necessitatibus? Dolorem mollitia assumenda veritatis sit amet adipisci reiciendis placeat omnis facere quos expedita ratione voluptatum nobis veniam ullam labore laboriosam illum voluptate, exercitationem natus itaque aut minus, nulla asperiores. Rerum, nisi, ullam accusantium provident deleniti vero officiis corporis corrupti odio maiores pariatur? Eos, porro labore, consequatur ducimus debitis distinctio libero earum iure, assumenda deserunt ipsam. Ut nihil, omnis sunt reprehenderit vitae cumque ipsam, non excepturi rem suscipit eos repudiandae porro. Consectetur voluptatibus totam iste doloribus veritatis? Totam, quo quam. Dicta soluta nam aut. Cumque doloremque accusantium ipsa? Consectetur, repudiandae necessitatibus dolores deleniti perferendis, quae ipsa unde iusto quas eos, doloremque aperiam obcaecati expedita voluptatem rem quis porro voluptates facere. Dolor tempora hic ea dignissimos, vel ipsum dolore, velit dolores eaque quos ab enim corporis fugit similique. Totam error, nam minima ab officia, quia inventore odit voluptates reiciendis praesentium quibusdam ipsa commodi reprehenderit laudantium voluptatibus maxime a suscipit necessitatibus eius odio hic? Fugit amet temporibus blanditiis enim consequuntur qui dicta repellat quae, cum perferendis debitis quam distinctio nihil cupiditate nam praesentium, in, ducimus sunt quas hic dignissimos velit illo neque ipsum. Harum odit ea facilis cumque, eveniet beatae inventore veritatis unde dolorum. Culpa cupiditate consectetur earum. Accusantium impedit voluptatem libero accusamus eum sit quae rem dignissimos omnis deleniti nulla odit quos, voluptas excepturi molestiae nisi, magni veritatis atque. Eaque temporibus dolores et officia possimus sunt enim animi vel vero ea omnis nisi dicta, similique dignissimos vitae, ex provident amet fugiat itaque ratione neque non? Iste, dignissimos! Ea alias vero dolorem et eos numquam eius provident, quidem dicta voluptates in veniam vel accusamus, facilis, sapiente saepe reiciendis recusandae. At, nobis. Cumque quae quos maxime error in optio, deserunt commodi odio asperiores labore facere harum odit nostrum animi dolores, ducimus placeat recusandae dolore quis amet earum. Obcaecati, sunt. Sapiente ipsum nisi perspiciatis corporis vitae dolorem, doloremque architecto beatae praesentium tempora maiores mollitia, fuga debitis cupiditate aliquid temporibus blanditiis eos quasi? Cum, minima inventore dolor consequuntur obcaecati neque debitis sunt vel omnis provident unde blanditiis quo ullam eos asperiores sapiente iusto necessitatibus placeat fugiat ut dolorum reprehenderit quidem illum aliquid. Voluptatum possimus nam doloremque, cupiditate ex itaque sint perspiciatis! Suscipit harum magnam nulla placeat repellat voluptatibus labore in nisi. Animi molestias quam sint, quas et in, quod itaque earum voluptatibus sequi inventore nam. Voluptatibus, atque itaque sunt nam voluptatum, minima, neque modi facilis enim beatae quia! Optio distinctio aut sequi, deserunt cumque incidunt voluptates laborum quod at id.</div>
   </body>
 </html>
