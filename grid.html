@@ -11,26 +11,56 @@
             color:white;
             font-size: x-large;
             height:80px;
-            width:80px;
+            width:100%;
 
         }
         .grid-container{
             display: grid;
             border:1px solid black;
-            grid-template-columns:100px 100px ;
-            grid-template-rows:120px 120px ;
+            /* grid-template-columns:100px 100px 100px;
+            grid-template-rows:120px 120px ; */
+
+            /* grid-template-columns: repeat(2,100px) 200px 200px; */
+            grid-template-columns: minmax(200px,300px) 300px;
             gap:10px;
+
+
         }
+
+        .box-1{
+            grid-column-start:1;
+            grid-column-end: 3;
+        }
+
+.box-5{
+    grid-column-start:1;
+    grid-column-end: 3;
+}
+.box-3{
+    grid-row-start: 2;
+    grid-row-end:4;
+    grid-column-start: 2;
+    grid-column-end:3;
+}
+
+.box-4{
+    grid-row-start:3;
+    grid-row-end:5;
+    grid-column-start: 1;
+    grid-column-end: 2;
+}
+
     </style>
 </head>
 <body>
     <!-- display:grid,grid-template-columns,grid-template-rows,gap -->
     <div class="grid-container">
-        <div class="box">A</div>
-        <div class="box">B</div>
-        <div class="box">C</div>
-        <div class="box">D</div>
-        <div class="box">E</div>
+        <div class="box box-1">A</div>
+        <div class="box box-2">B</div>
+        <div class="box box-3">C</div>
+        <div class="box box-4">D</div>
+        <div class="box box-6">F</div>
+        <div class="box box-5">E</div>
     </div>
 </body>
 </html>

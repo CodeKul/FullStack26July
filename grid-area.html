@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .grid-container {
+        display: grid;
+        grid-template-columns: 150px 150px 150px 150px;
+        grid-template-rows: 160px 160px;
+        gap: 5px;
+        grid-template-areas:
+          "pune pune mumbai surat"
+          "banglore delhi mumbai surat";
+      }
+      .box {
+        background-color: olivedrab;
+        color: white;
+        /* height: 140px;
+        width: 130px; */
+      }
+      .box-1 {
+        grid-area: pune;
+      }
+      .box-2 {
+        grid-area: mumbai;
+      }
+      .box-3 {
+        grid-area: banglore;
+      }
+      .box-4 {
+        grid-area: delhi;
+      }
+      .box-5 {
+        grid-area: surat;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="grid-container">
+      <div class="box box-1">Pune</div>
+      <div class="box box-2">Mumbai</div>
+      <div class="box box-3">Banglore</div>
+      <div class="box box-4">Delhi</div>
+      <div class="box box-5">Surat</div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            width:1000px;
+            margin:0 auto;
+
+
+        }
+        h1{
+            font-size: 45px;
+            font-weight: bold;
+            text-align: center;
+        }
+        img{
+            width: 100%;
+        }
+        .columns{
+            display: flex;
+            margin-top:30px;
+            justify-content: space-between;
+            font-size: 18px;
+        }
+        .col-1{
+            width: 25%;
+        }
+        .col-2{ 
+            width: 45%;
+        }
+
+        .col-3{
+            width:70%;
+        }
+        .bg-dark{
+            background-color: rgb(44, 41, 41);
+            color:whitesmoke;
+            padding:8px;
+        }
+        h1 span{
+            color:peru;
+        }
+
+        @media (max-width:600px){
+            .columns{
+                flex-direction:column;
+                font-size: 22px;
+            }
+            .col-1,.col-2,.col-3{
+                width:100%;
+            }
+            
+            
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Let's learn <span> flexbox in more</span> detail</h1>
+        <img src="blog-writing.jpg" alt="">
+        <div class="columns">
+            <div class="col-1">
+                <h4>Dolor sit</h4>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium alias debitis illo a quasi perspiciatis veritatis fuga optio, unde consequuntur eveniet provident dolorem voluptas praesentium commodi porro corrupti fugit quaerat ea neque.</p>
+            </div>
+            <div class="col-2">
+                <h4>Consectetur adipisicing</h4>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat ducimus dolorem ex quasi et, esse ipsum vel consectetur. Sit error laboriosam eligendi labore omnis, explicabo impedit iusto atque saepe doloribus.</p>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. In vitae harum facere.</p>
+            </div>
+            <div class="col-1 bg-dark">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam error magnam sunt temporibus voluptatibus labore dolores optio? Fugiat illo numquam in sunt facilis? Similique.</p>
+            </div>
+        </div>
+        <div class="columns">
+            <div class="col-3">
+                <h4>impedit iusto atque saepe doloribus</h4>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Animi dignissimos corporis reiciendis, minus nihil ducimus, dolor ipsa possimus, commodi iure cupiditate repudiandae consequuntur dolorem delectus dicta unde cumque saepe! Doloribus consequatur officia velit repellat natus dolorum deserunt corrupti ab sapiente!
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nostrum recusandae ratione iste nesciunt esse aliquam ducimus facilis, odit error enim.
+
+
+                </p>
+            </div>
+            <div class="col-1 bg-dark">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic magni non molestias assumenda voluptate ipsum sunt aliquam autem ut esse?</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

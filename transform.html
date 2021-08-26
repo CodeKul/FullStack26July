@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .box {
+        background-color: orange;
+        height: 200px;
+        width: 200px;
+        font-size: x-large;
+        margin: 100px;
+        /* transform: translate(100px, 100px); */
+        /* transform: skew(20deg); */
+      }
+      .box:hover {
+        /* transform: scale(2); */
+        /* transform: translate(100px, 100px); */
+        transform: rotate(40deg);
+        transition-property: transform;
+        transition-duration: 5s;
+        transition-timing-function: ease-in-out;
+        /* transition-delay: 3s; */
+      }
+      .btn {
+        border: none;
+        background-color: navy;
+        color: white;
+        padding: 8px;
+        border-radius: 5px;
+        margin: 100px;
+        transition: transform 0.5s ease-in;
+      }
+      .btn:hover {
+        transform: scale(1.1);
+      }
+    </style>
+  </head>
+  <body>
+    <!-- transform - rotate,translate,skew,scale -->
+    <!-- transition -  -->
+
+    <div class="box"><strong>I am a box</strong></div>
+    <!-- <div class="box"></div> -->
+    <button class="btn">Get Info</button>
+  </body>
+</html>
