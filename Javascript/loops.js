@@ -26,11 +26,6 @@ do{
     y++
 }while(y<=10)
 
-//for..of  ---array
-// let seasons=["Rainy","Winter","Summer"]
-// for()
-
-
 //for...in  ----object
 let course={
     name:"React JS",
@@ -41,4 +36,18 @@ let course={
 for(c in course){
     console.log(c)
     console.log(course[c])
+}
+
+
+//for..of
+let n=10
+let seasons = ["rainy","winter","summer","spring"]
+console.log("")
+for(let x of seasons){
+    
+    console.log(x)
+}
+
+for(let y = 0;y<seasons.length;y++){
+    console(seasons[y])
 }
