@@ -65,3 +65,29 @@ function addition(num){
 }
 
 
+//filter
+
+let numbers = [2,5,8,6,7,10,12]
+
+
+function calculateEvenOdd(num){
+if(num%2 ==0){
+  return true
+}else{
+ return false
+}
+}
+
+let resultVar=numbers.filter(calculateEvenOdd)
+console.log(resultVar)
+
+let productPrices=[3000,2000,1000,25000,800,100,1200]
+function getFilteredPrices(price){
+    return price < 2000
+}
+
+let filtered = productPrices.filter(getFilteredPrices)
+console.log(filtered)
+
+
+
