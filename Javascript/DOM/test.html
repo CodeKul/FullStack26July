@@ -5,19 +5,65 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        .div-one p:last-child{
+            background-color: lightblue;
+            border-radius: 6px;
+        }
+    </style>
 </head>
 <body>
-    <h1 id="heading">Hello World</h1>
+   
     <h3 id="third-heading">Hello</h3>
+    <div class="div-one">
+        <h4>Heading</h4>
+        <p id="p" class="content" name="paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos, incidunt ipsa. Cumque et provident veritatis cum doloribus quaerat, harum, voluptatibus placeat laboriosam repudiandae soluta aliquam atque libero quia facilis laborum odio, fuga distinctio! Optio aut, cum ratione ipsum nulla aspernatur.</p>
+        <p>The most common and widely used lifecycle method is componentDidMount. </p>
+    </div>
+    <div class="div-one">
+        <h4>Another Heading</h4>
+        <p class="content" name="paragraph">Lorem ipsum dolor sit, amet consectetur adipisicing elit. In, soluta harum. Quam cum harum enim quibusdam, obcaecati nam id ut.</p>
+
+    </div>
+    <span class="content">Outside DIV</span>
     <script>
-       //getElementById,getElementByClassName,getElementByName,getElementByTagName,
+        //for getting html elements from the document
+       //getElementById,getElementByClassName,getElementsByName,getElementsByTagName,
        //querySelector,querySelectorAll
 
-        let x = document.getElementById("heading")
-        console.log(x)
+        
 
         let y =document.getElementById("third-heading")
         console.log(y)
+
+        let z =document.getElementsByClassName("content")
+        console.log(z[2])
+
+       let w= document.getElementsByName("paragraph")
+       console.log(w[0])
+
+       let q = document.getElementsByTagName("h4")
+       console.log(q[1])
+
+       let selectorOutput =document.querySelectorAll(".div-one p:last-child")
+       console.log(selectorOutput[1])
+
+       //Changing the content
+       //innerText,innerHTML
+       let result = document.getElementById("p")
+       console.log(result)
+       let str="We did not provide many examples, because as a general rule, derived state should be used sparingly. All problems with derived state that we have seen can be ultimately reduced to either (1) unconditionally updating state from props or (2) updating state whenever props and state don’t match. (We’ll go over both in more detail below.)"
+       
+    result.innerText=100
+    result.innerHTMl=`<strong>${str}</strong>`
+
+
+    //Creating a html element using createElement()
+    let heading=document.createElement('h1')
+        console.log(heading)
+
+    heading.innerText="New Heading"
+    document.body.append(heading)
     </script>
 </body>
 </html>
