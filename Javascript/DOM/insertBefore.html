@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <div id="content">
+        <h3>Description</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium officia commodi nobis nisi voluptatum earum qui ipsa delectus? Placeat temporibus nesciunt officia, distinctio ea consequatur cupiditate in nulla perspiciatis iusto similique, itaque reprehenderit eius? Et amet accusantium officiis totam cumque.</p>
+        <a href="#" id="anchor">Show More</a>
+        
+    </div>
+    <script>
+        let h1 = document.createElement('h1')
+        h1.innerHTML="React JS"
+      //  document.body.appendChild(h1)
+
+      let p = document.createElement('p')
+      p.innerHTML="Note:lorem ipsum commodi nobis nisi voluptatum earum qui ipsa delectus?"
+    //   document.getElementById("content").insertAdjacentElement(document.getElementById('anchor'),p)
+    // let div = document.getElementById("content")
+
+    // div.insertAdjacentElement("afterend",p)
+
+        // div.insertAfter(p,document.getElementById("anchor"))
+
+
+
+        document.body.insertBefore(h1,document.getElementById("content"))
+    </script>
+</body>
+</html>

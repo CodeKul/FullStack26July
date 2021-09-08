@@ -16,7 +16,7 @@
    
     <h3 id="third-heading">Hello</h3>
     <div class="div-one">
-        <h4>Heading</h4>
+        <h4>Welcome</h4>
         <p id="p" class="content" name="paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos, incidunt ipsa. Cumque et provident veritatis cum doloribus quaerat, harum, voluptatibus placeat laboriosam repudiandae soluta aliquam atque libero quia facilis laborum odio, fuga distinctio! Optio aut, cum ratione ipsum nulla aspernatur.</p>
         <p>The most common and widely used lifecycle method is componentDidMount. </p>
     </div>
@@ -26,6 +26,7 @@
 
     </div>
     <span class="content">Outside DIV</span>
+
     <script>
         //for getting html elements from the document
        //getElementById,getElementByClassName,getElementsByName,getElementsByTagName,
@@ -63,7 +64,12 @@
         console.log(heading)
 
     heading.innerText="New Heading"
-    document.body.append(heading)
+
+    // insertBefore(newnode,before which node we want to insert)
+
+   
+
+    document.body.insertBefore(heading,document.getElementById("third-heading"))
     </script>
 </body>
 </html>

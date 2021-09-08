@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+    <script>
+        //createElement, append,appendChild
+        let div = document.createElement('div')
+        let h1 = document.createElement('h1')
+        let p = document.createElement('p')
+        let ul = document.createElement('ul')
+        let li1 = document.createElement('li')
+        let li2 = document.createElement('li')
+        let li3 = document.createElement('li')
+
+        h1.innerHTML="Heading"
+        p.innerHTML="Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eaque aliquam corrupti incidunt fugiat minus vero, debitis reiciendis consectetur labore amet."
+        li1.innerHTML="India"
+        li2.innerHTML="Russia"
+        li3.innerHTML="Israel"
+
+        console.log(h1)
+        console.log(p)
+        console.log(li1)
+        console.log(li2)
+        console.log(li3)
+        console.log(ul)
+
+        ul.append(li1)
+        ul.append(li2)
+        ul.append(li3)
+        console.log(ul)
+
+        div.append(h1)
+       div.appendChild(p)
+        div.append(ul)
+
+        console.log(div)
+
+        document.body.append(div)
+
+    </script>
+
+</body>
+</html>
