@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="head">Heading</h1>
+    <button onclick="changeHeadingContent()">Change heading</button>
+    <p id="content">Lorem ipsum dolor sit amet.</p>
+    <button id="btn">Change content</button>
+    <script>
+        //onclick,onmouseover,onkeyup,onkeydown,onmouseout......
+        //onclick,addEventListener()
+        function changeHeadingContent(){
+            document.getElementById("head").innerText="New Heading"
+        }
+        let btn = document.getElementById("btn")
+        // btn.addEventListener('click',function(){
+        //     document.getElementById("content").innerHTML="Hello world"
+        // })
+
+
+        //addEventListener - can add multiple events on a single HTML element
+        btn.addEventListener('click',changePContent)
+
+        function changePContent(){
+            document.getElementById("content").innerHTML="Hello world"
+        }
+
+        btn.addEventListener('click',function(){
+           let span= document.createElement('span')
+            span.innerHTML="New Element"
+            document.body.append(span)
+        })
+
+    </script>
+</body>
+</html>

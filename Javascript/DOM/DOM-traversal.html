@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .div-style{
+            background-color: lightblue;
+            border-top:3px solid navy;
+        }
+    </style>
+</head>
+<body>
+    <div id="div-content">
+        <p id="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita unde laboriosam et perferendis ex explicabo iure quam perspiciatis repudiandae quas. Eos nobis nemo ipsam. Nisi voluptatem totam sed laudantium excepturi.</p>
+        <ul id="list">
+            <li>India</li>
+            <li>Russia</li>
+            <li>China</li>
+        </ul>
+    </div>
+
+    <script>
+        //setAttribute,getAttribute,hasAttribute,removeAttribute
+       let div=  document.getElementById("div-content")
+       div.setAttribute('class',"div-style")
+      let x =  div.hasAttribute('name')
+      console.log(x)
+      let attrValue = div.getAttribute('id')  
+    console.log(attrValue)
+
+    div.removeAttribute('class')
+
+    let p = document.getElementById("description")
+    p.style.color="red"
+    p.className="div-style"
+    div.style.backgroundColor="lightgreen"
+
+
+    //firstElementChild,lastElementChild,children,parentElement,nextElementSibling
+
+    let ul = document.getElementById("list")
+        let parentValue = ul.parentElement
+        console.log(parentValue)
+
+       let childrenUl =  ul.children
+       console.log(childrenUl)
+
+       let child1 = ul.firstElementChild
+       console.log(child1)
+
+       let child2 = ul.lastElementChild
+       console.log(child2)
+
+       let sibling = ul.lastElementChild.previousElementSibling
+       console.log(sibling)
+    </script>
+</body>
+</html>
