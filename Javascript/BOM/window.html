@@ -9,6 +9,11 @@
 <body>
     <button onclick="openWindow()">Open News</button>
     <button onclick="closeWindow()">Close News</button>
+
+    <button onclick="goBack()">Go back</button>
+    <button onclick="openAlert()">
+        Open Alert
+    </button>
     <script>
         let w;
         function openWindow(){
@@ -19,6 +24,23 @@
         function closeWindow(){
             w.close()
         }
+
+        console.log(window.innerWidth)
+        console.log(window.innerHeight)
+
+        function goBack(){
+            history.back()
+        }
+
+    function openAlert(){
+        alert("This is window")
+    }
+    let inputValue= prompt("Enter a number",0)
+    console.log(inputValue)
+
+
+   let answer =confirm("Are you sure you want to delete this file?")
+    console.log(answer)
     </script>
 </body>
 </html>
