@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //destructuring - separting array/object elements into separate variables
+        let arr=["mouse","keyboard","stylus"]
+      
+        let [a,b,c,d]=arr
+        console.log(a + ' '+ b+' '+c+' '+d)
+
+        //skipping a element
+        let[x,y,,z]=arr
+        console.log(x+' '+y+' '+z)
+
+        //default value
+        let [p,q,r,s="hello"]=arr
+        console.log(p+' '+q+' '+r +' '+s)
+
+        //key:value
+        let product={
+            name:"keyboard",
+            qty:4,
+            price:1200
+        }
+        
+        // let quantity = product.qty
+        // let productName = product.name
+
+        // console.log(quantity)
+        // console.log(product.qty)
+
+        //name of the keys should match the destructured variables
+        // let {price,qty,name}=product
+        // console.log(name,+ ' '+qty+ " "+ price )
+
+        let {price,qty,name:productName}=product
+        console.log(productName)
+
+        //nested object
+
+        let student={
+            name:"abc",
+            age:10,
+            address:{
+                city:"Pune",
+                pin:400021
+            },
+            skills:["painting","cycling"]
+        }
+
+        let {name,age,address:{city,pin},skills:[skill1,skill2]}=student
+        
+        console.log(`Name : ${name} Age:${age}  City: ${city} Pin:${pin}  Skills : ${skill1} , ${skill2}`)
+        
+    </script>
+</body>
+</html>
