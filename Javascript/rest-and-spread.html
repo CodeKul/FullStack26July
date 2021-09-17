@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //spread operator  --> ...
+        let arr = [2,5,10,40,12]
+        console.log(...arr)
+
+        //merge two arrays
+        let skills=["C","C++"]
+        let newskills=["Java","Javascript","CSS"]
+
+        let allskills=[skills,newskills]
+        console.log(allskills)//[["c","c++"],["java","javascript","css"]]
+        //["c","c++","java","javascript","css"]
+
+        let mergedskills=[...skills,...newskills,"React","Bootstrap"]
+        console.log(mergedskills)
+
+        //clone array
+        let array1= [2,4,6,9]
+        let array2 =array1
+        console.log(array1)
+        console.log(array2)
+
+        array1.push(14)
+        console.log(array1)
+        console.log(array2)
+
+
+        let a1=[3,5,7,9]
+        // let a2 =[a1] //[[3,5,7,9]]
+        let a2 =[...a1] // [3,5,7,9]
+
+        console.log(a1)
+        console.log(a2)
+
+        a1.push(50)
+
+        console.log(a1)
+        console.log(a2)
+
+
+        //spread object
+        let obj1={one:10,two:30}
+        let obj2={three:60,four:90}
+
+        let obj3={obj1,obj2} //{obj1:{one:10,two:30},obj2:{three:60,four:90}}
+        console.log(obj3)
+
+        //{one:10,two:30,three:60,four:90}
+
+        let spreadObj = {...obj1,...obj2}
+        console.log(spreadObj)
+
+
+
+        //rest parameter --> ...
+
+        function add(x,y,...numbers){ //parameters
+            console.log(x,y,numbers)
+        }
+
+        add(10,90,100,99,80,40,022,100) //arguments
+
+    </script>
+</body>
+</html>
