@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body >
+    <p id="display"></p>
+
+    <button onmouseover="handleMove()" onmouseout="removeContent()">Move Mouse</button>
+
+    <input type="text" onkeyup="handleKeyboard()">
+
+    <p id="heading">Inside P</p>
+
+    <h5 id="showchange"></h5>
+    <textarea name="" id="comment" cols="30" rows="6" onchange="getComment()"></textarea>
+    <button onclick="handleClick()">Add Comment</button>
+    
+    <script>
+        //onmouseover,onmouseout,onkeyup,onkeydown,keypress,onfocus,onchange
+        
+        // document.onkeydown=function(){
+        //     document.getElementById("heading").innerText="Document Keydown"
+        // }
+        function handleMove(){
+            document.getElementById("display").innerHTML="Mouse Over"
+        }
+
+        function removeContent(){
+            document.getElementById("display").innerHTML=""
+        }
+        function handleKeyboard(){
+            console.log("handleKeyboard")
+            document.getElementById("heading").innerHTML="key Up"
+        }
+
+        function handleClick(){
+            document.getElementById("comment").focus()
+            let comments = document.getElementById("comment").value
+            console.log(comments)
+        }
+
+        function commentFocus(){
+
+            console.log("")
+            document.getElementById("comment").style.backgroundColor="lightblue"
+        }
+
+        function getComment(){
+            
+            let x = document.getElementById("comment").value
+            document.getElementById("showchange").innerText= x
+        }
+        
+    </script>
+</body>
+</html>
