@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=script, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="title"></h1>
+    <h3 id="sum"></h3>
+    <h2 id="msg"></h2>
+    <p id="emp"></p>
+    <script type="module">
+
+
+        import {add,greeting,displayMsg} from './additionmodule.js'
+        import displayInputUI  from './myModule.js'
+        import displayEmployee from './module1.js'
+        //import and export  - named,default
+        let result = add(1,9,7,57,90)
+        document.getElementById("title").innerHTML=greeting
+        document.getElementById("sum").innerHTML=result
+        let msg = displayMsg("Use Render Props for Cross-Cutting Concerns")
+        document.getElementById("msg").innerHTML=msg
+
+        displayInputUI()
+
+        
+        let emp = displayEmployee()
+        console.log(emp)
+        document.getElementById("emp").innerHTML=emp.name + emp.city + emp.salary
+     </script>
+</body>
+</html>
