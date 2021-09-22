@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    //   function greet(name){
+    //         console.log('Hi '+name)
+    //   }
+
+    //     function displayName(){
+    //          console.log("After displaying name")   
+    //     }
+
+    //     setTimeout(greet,2000,"abc")
+    //     displayName()
+
+
+
+    //     function greet(name,fun){
+    //         console.log('Hi '+name)
+    //         fun()
+    //   }
+
+    //     function displayName(){
+    //          console.log("After displaying name")   
+    //     }
+
+    //     setTimeout(greet,2000,"abc",displayName)
+
+
+       let salary=0
+        function setSalary(sal,increment){
+            salary = sal
+            increment(show)
+
+        }
+
+        function increment(show){
+            salary = salary+1000
+            show()
+            
+        }
+        function show(){
+            console.log(salary)
+        }
+        setTimeout(setSalary,3000,5000,increment)
+
+        //Promises
+       
+    </script>
+</body>
+</html>
